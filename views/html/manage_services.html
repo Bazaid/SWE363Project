@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>DashBoard</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="../assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+          </ul>
+    
+        </form>
+        <ul class="navbar-nav navbar-right">       
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Admin</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html">KFUPM Services</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html">KFUPM</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header ">Dashboard</li>
+            <li>
+              <a href="dashboard.html" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+            </li>
+
+            <li class="menu-header">Services/Requests</li>
+            <li class="active"><a class="nav-link" href="manage_services.html"><i class="fas fa-tasks"></i> <span>Manage Services</span></a></li>
+            <li><a class="nav-link" href="manage_requests.html"><i class="fas fa-cogs"></i> <span>Manage Requests</span></a></li>
+
+            <li class="menu-header">Staff</li>
+            <li><a class="nav-link" href="manage_staff.html"><i class="fas fa-user-tie"></i> <span>Manage Staff</span></a></li>
+         
+            <li class="menu-header">Users</li>
+            <li><a class="nav-link" href="manage_users.html"><i class="fas fa-user-tie"></i> <span>Manage Users</span></a></li>
+         
+         
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Manage Services</h1>
+          </div>
+
+          <div class="section-body">
+
+              <div class="card">
+                  <div class="card-header">
+                    <h4>Available Services</h4>
+                    <div class="card-header-action">
+                      <a href="#" class="btn btn-primary">+</a>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="table-responsive">
+                      <table class="table table-striped mb-0">
+                        <thead>
+                          <tr>
+                            <th>Service</th>
+                            <th>Creation Date</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>                         
+                          <tr>
+                            <td>
+                              AC Problem
+                            </td>
+                            <td>
+                                2019-1-1
+                            </td>
+                            <td>
+                              <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                              <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Room Unlock
+                            </td>
+                            <td>
+                                2019-1-1
+                            </td>
+                            <td>
+                              <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                              <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
+                            </td>
+                          </tr>
+                          <tr></tr>
+                            <td>
+                              Service 3 
+                            </td>
+                            <td>
+                                2019-1-1
+                            </td>
+                            <td>
+                              <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                              <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                Service 4
+                            </td>
+                            <td>
+                                2019-1-1
+                            </td>
+                            <td>
+                              <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                              <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
+                            </td>
+                          </tr>
+               
+
+                        </tbody>
+                      </table>
+
+                    </div>
+       
+          </div>
+          <div class="card-footer text-center">
+              <nav class="d-inline-block">
+                  <ul class="pagination mb-0">
+                    <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  </ul>
+                </nav>
+          </div>
+        </div>
+      </div>
+
+        </section>
+
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2018 <div class="bullet"></div> 
+        </div>
+        <div class="footer-right">
+          
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="../assets/modules/jquery.min.js"></script>
+  <script src="../assets/modules/popper.js"></script>
+  <script src="../assets/modules/tooltip.js"></script>
+  <script src="../assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="../assets/modules/moment.min.js"></script>
+  <script src="../assets/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+
+  <!-- Page Specific JS File -->
+  
+  <!-- Template JS File -->
+  <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/custom.js"></script>
+</body>
+</html>
