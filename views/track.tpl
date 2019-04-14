@@ -25,7 +25,13 @@
                                 <div class="profile-widget-items">
                                     <div class="profile-widget-item">
                                         <div class="profile-widget-item-label">Requests</div>
-                                        <div class="profile-widget-item-value">{sizeOf($requests)}</div>
+                                        <div class="profile-widget-item-value">
+                                            {if isset($requests)}
+                                            {sizeOf($requests)}
+                                            {else}
+                                            0
+                                            {/if}
+                                        </div>
                                     </div>
                                     <div class="profile-widget-item">
                                         <div class="profile-widget-item-label">Completed Requests</div>
@@ -80,9 +86,7 @@
                                     <ul class="pagination mb-0">
                                         <li class="page-item active"><a class="page-link" href="#">1 <span
                                                     class="sr-only">(current)</span></a></li>
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#">2</a>
-                                        </li>
+
                                     </ul>
                                 </nav>
                                 {/if}
@@ -116,10 +120,12 @@
                                                 <td>{$services[$request['service_id']]['name']}</td>
                                                 <td>{$request['created_at']}</td>
                                                 <td>
-                                                    <div class="badge badge-danger">{$request['status']}</div>
+                                                    <div class="badge badge-danger">
+                                                        Pending
+                                                    </div>
                                                 </td>
                                                 <td><a href="request.php?id={$request['id']}"
-                                                        class="btn btn-secondary">Detail</a></td>
+                                                        class="btn btn-primary">Detail</a></td>
                                             </tr>
                                             {/if}
                                             {{/foreach}}
@@ -137,10 +143,8 @@
                                 {if $PindingCount > 0}
                                 <nav class="d-inline-block">
                                     <ul class="pagination mb-0">
-                                        <li class="page-item active"><a class="page-link" href="#">1 <span
-                                                    class="sr-only">(current)</span></a></li>
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#">2</a>
+                                        <li class="page-item active"><a class="page-link" href="#">1
+                                                <span class="sr-only">(current)</span></a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -154,5 +158,6 @@
             </div>
         </section>
     </div>
+
 
     {include file='./include/footer.tpl'}

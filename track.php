@@ -16,6 +16,11 @@ if ($result = $mysqli->query($sql)) {
             $requests[] = $row;
     }
 }
+if (!isset($requests)) {
+    $requests = null;
+}
+$smarty->assign('requests', $requests);
+
 
 $sql2 = "SELECT * FROM `services`";
 
@@ -27,17 +32,29 @@ if ($result = $mysqli->query($sql2)) {
 }
 
 $smarty->assign('services', $services);
-$smarty->assign('requests', $requests);
-$CompletedCount = array_filter($requests,
-function($element) {
-  return $element['completed'] == 1;
-});
-$smarty->assign('CompletedCount', sizeof($CompletedCount));
 
-$PindingCount = array_filter($requests,
-function($element) {
-  return $element['completed'] == 0;
-});
-$smarty->assign('PindingCount', sizeof($PindingCount));
+if (isset($requests)) {
+    $CompletedCount = array_filter($requests,
+    function($element) {
+      return $element['completed'] == 1;
+    });
+    $CompletedCount = sizeof($CompletedCount);
+
+    $PindingCount = array_filter($requests,
+    function($element) {
+        return $element['completed'] == 0;
+    });
+    $PindingCount = sizeof($PindingCount);
+}else {
+    $CompletedCount = 0;
+    $PindingCount = 0;
+
+}
+
+
+
+$smarty->assign('CompletedCount', $CompletedCount);
+
+$smarty->assign('PindingCount', $PindingCount);
 
 $smarty->display('track.tpl');

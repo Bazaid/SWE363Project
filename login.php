@@ -27,4 +27,5 @@ if (isset($_POST['email'])) {
     }
 }
 
+$mysqli->close();
 $smarty->display('login.tpl');

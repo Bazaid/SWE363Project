@@ -17,9 +17,16 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/s2.css">
+
     <script src="/assets/modules/jquery.min.js"></script>
     <script src="/assets/modules/popper.js"></script>
+    <script src="/assets/modules/tooltip.js"></script>
+    <script src="/assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+
     <script src="/assets/modules/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="/assets/js/stisla.js"></script>
+    <script src="/assets/js/scripts.js"></script>
 
 </head>
 

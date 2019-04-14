@@ -17,7 +17,7 @@
 
                     <div class="col-12 col-md-12 col-lg-7">
                         <div class="card">
-                            <form method="post" class="needs-validation" novalidate="">
+                            <form action="#" method="POST" class="needs-validation" novalidate="">
                                 <div class="card-header">
                                     <h4>Edit Profile</h4>
                                 </div>
@@ -25,15 +25,15 @@
                                     <div class="row">
                                         <div class="form-group col-md-6 col-12">
                                             <label>Building Number</label>
-                                            <input type="text" class="form-control" value="{$user->building}"
-                                                required="">
+                                            <input name="building" type="text" class="form-control" value="{$user->building}"
+                                                required>
                                             <div class="invalid-feedback">
                                                 Please fill in the building number
                                             </div>
                                         </div>
                                         <div class="form-group col-md-6 col-12">
                                             <label>Room Number</label>
-                                            <input type="text" class="form-control" value="{$user->room}" >
+                                            <input name="room" type="text" class="form-control" value="{$user->room}"  required>
                                             <div class="invalid-feedback">
                                                 Please fill in the room number
                                             </div>
@@ -42,7 +42,7 @@
                                     <div class="row">
                                         <div class="form-group col-md-7 col-12">
                                             <label>Email</label>
-                                            <input type="email" class="form-control" value="{$user->email}">
+                                            <input name="email" type="email" class="form-control" value="{$user->email}" required>
                                             <div class="invalid-feedback">
                                                 Please fill in the email
                                             </div>
