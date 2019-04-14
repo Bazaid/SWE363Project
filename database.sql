@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.21)
 # Database: project
-# Generation Time: 2019-04-13 22:56:44 +0000
+# Generation Time: 2019-04-14 15:02:18 +0000
 # ************************************************************
 
 
@@ -18,6 +18,22 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+# Dump of table comments
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `comments`;
+
+CREATE TABLE `comments` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `requests_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `comment` text NOT NULL,
+  `date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 
 # Dump of table requests
@@ -31,22 +47,14 @@ CREATE TABLE `requests` (
   `user_id` int(11) NOT NULL,
   `staff_id` int(11) DEFAULT NULL,
   `info` text NOT NULL,
-  `status` varchar(64) DEFAULT 'Pending',
   `completed` int(1) unsigned zerofill DEFAULT '0',
   `created_at` date DEFAULT NULL,
   `completed_at` date DEFAULT NULL,
+  `room` int(11) DEFAULT NULL,
+  `building` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-LOCK TABLES `requests` WRITE;
-/*!40000 ALTER TABLE `requests` DISABLE KEYS */;
-
-INSERT INTO `requests` (`id`, `service_id`, `user_id`, `staff_id`, `info`, `status`, `completed`, `created_at`, `completed_at`)
-VALUES
-	(1,1,1,NULL,'t','Pending',0,'2017-01-09',NULL);
-
-/*!40000 ALTER TABLE `requests` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # Dump of table services
@@ -98,7 +106,8 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `room`, `building`, `role`)
 VALUES
-	(1,'Student','Test','student@test.com','$2y$10$4E7FjOiegIlMuK2tY714u.0bESOIV23klPyin7iTMz6npClv87MGu',300,800,0);
+	(1,'Student','Test','student@test.com','$2y$10$4E7FjOiegIlMuK2tY714u.0bESOIV23klPyin7iTMz6npClv87MGu',300,800,0),
+	(2,'Staff','Test','staff@test.com','$2y$10$yGyDXVpQQYT.a56IcOfywuhUTCFaVXReTPtT0jrbh6n48K/CNEjua',0,0,1);
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
