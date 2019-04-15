@@ -3,7 +3,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark  fixed-top transition" id="mainNav">
     <div class="container">
 
-      <a class="navbar-brand js-scroll-trigger" href="/index.php">
+      <a class="navbar-brand js-scroll-trigger" href="index.php">
         KFUPM Maintenance
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -22,13 +22,13 @@
               <div class="d-sm-none d-lg-inline-block">Hi, {$user->first_name} {$user->last_name}</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item has-icon" href="/track.php">
+              <a class="dropdown-item has-icon" href="{php}echo __URL;{/php}track.php">
                 <i class="fas fa-concierge-bell"></i> Track Requests
               </a>
-              <a class="dropdown-item has-icon" href="/profile.php">
+              <a class="dropdown-item has-icon" href="{php}echo __URL;{/php}profile.php">
                 <i class="far fa-user"></i> Profile
               </a>
-              <a class="dropdown-item has-icon text-danger" href="/logout.php">
+              <a class="dropdown-item has-icon text-danger" href="logout.php">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
               {else}
@@ -37,10 +37,10 @@
               <div class="d-sm-none d-lg-inline-block">Hi, {$user->first_name} {$user->last_name}</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item has-icon" href="/dashboard.php">
+              <a class="dropdown-item has-icon" href="{php}echo __URL;{/php}dashboard.php">
                 <i class="fas fa-concierge-bell"></i> Dashboard
               </a>
-              <a class="dropdown-item has-icon text-danger" href="/logout.php">
+              <a class="dropdown-item has-icon text-danger" href="{php}echo __URL;{/php}logout.php">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
 
@@ -50,10 +50,10 @@
           </li>
           {else}
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/login.php">Login{$logg}</a>
+            <a class="nav-link js-scroll-trigger" href="{php}echo __URL;{/php}login.php">Login{$logg}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/register.php">Register</a>
+            <a class="nav-link js-scroll-trigger" href="{php}echo __URL;{/php}register.php">Register</a>
           </li>
           {/if}
 

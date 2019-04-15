@@ -14,7 +14,7 @@
             <div class="d-sm-none d-lg-inline-block">Admin</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-divider"></div>
-              <a href="logout.php" class="dropdown-item has-icon text-danger">
+              <a href="{php}echo __URL;{/php}logout.php" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>
@@ -25,25 +25,25 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html">KFUPM Services</a>
+            <a href="#">KFUPM Services</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">KFUPM</a>
+            <a href="#">KFUPM</a>
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header ">Dashboard</li>
             <li class="active">
-              <a href="dashboard.php" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+              <a href="{php}echo __URL;{/php}dashboard.php" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
 
             <li class="menu-header">Services</li>
-            <li><a class="nav-link" href="manage_services.php"><i class="fas fa-tasks"></i> <span>Manage Services</span></a></li>
+            <li><a class="nav-link" href="{php}echo __URL;{/php}manage_services.php"><i class="fas fa-tasks"></i> <span>Manage Services</span></a></li>
 
             <li class="menu-header">Staff</li>
-            <li><a class="nav-link" href="manage_staff.php"><i class="fas fa-user-tie"></i> <span>Manage Staff</span></a></li>
+            <li><a class="nav-link" href="{php}echo __URL;{/php}manage_staff.php"><i class="fas fa-user-tie"></i> <span>Manage Staff</span></a></li>
          
             <li class="menu-header">Users</li>
-            <li><a class="nav-link" href="manage_users.php"><i class="fas fa-user-tie"></i> <span>Manage Users</span></a></li>
+            <li><a class="nav-link" href="{php}echo __URL;{/php}manage_users.php"><i class="fas fa-user-tie"></i> <span>Manage Users</span></a></li>
          
          
           </ul>

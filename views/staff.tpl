@@ -70,8 +70,7 @@
                   <td>
                     Pending
                   </td>
-                   <td><a href="request.php?id={$request['id']}"
-                                                        class="btn btn-primary">Detail</a></td>
+                   <td><a href="request.php?id={$request['id']}" class="btn btn-primary">Detail</a></td>
                 </tr>
                 {/foreach}
                 {else}
