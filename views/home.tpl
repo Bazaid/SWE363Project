@@ -67,7 +67,7 @@
                       </div>
                     </div>
                     <figure>
-                      <img class="img-fluid" src="/assets/img/{$service['logo']}" alt="">
+                      <img class="img-fluid" src="assets/img/{$service['logo']}" alt="">
                     </figure>
 
                   </a>
