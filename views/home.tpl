@@ -100,7 +100,7 @@
           method: 'GET',
           success: function (rsp) {
             let service = JSON.parse(rsp)
-            $("#sidebar_img").attr("src", "/assets/img/" + service[0].logo)
+            $("#sidebar_img").attr("src", "assets/img/" + service[0].logo)
 
             $("#service_name").html(service[0].name)
             $("#description").html(service[0].description)
