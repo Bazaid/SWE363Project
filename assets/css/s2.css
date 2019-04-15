@@ -17,8 +17,8 @@
 .portfolio .portfolio-item .portfolio-item-caption {
     -webkit-transition: all ease .5s;
     transition: all ease .5s;
-    opacity: 1;
-    background-color: rgba(24, 188, 156, .9)
+    opacity: 0.9;
+    background-color: #6777ef;
 }
 
 

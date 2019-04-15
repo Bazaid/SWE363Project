@@ -4,7 +4,8 @@
     <div class="container">
 
       <a class="navbar-brand js-scroll-trigger" href="index.php">
-        KFUPM Maintenance
+        
+         <img class="img-fluid" src="{php}echo __URL;{/php}assets/img/logo.PNG" width="29%" height="20%" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
