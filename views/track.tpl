@@ -128,7 +128,7 @@
                                                         class="btn btn-primary">Detail</a></td>
                                             </tr>
                                             {/if}
-                                            {{/foreach}}
+                                            {/foreach}
                                         </tbody>
                                     </table>
                                 </div>

@@ -121,7 +121,7 @@
     </div>
     </div>
     <script>
-        var requestId = {$requestId}
+        const requestId = {$requestId}
     </script>
     {literal}
     <script>

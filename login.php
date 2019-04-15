@@ -12,7 +12,7 @@ if (isset($_POST['email'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM `users` where email='$email'";
+    $sql = "SELECT * FROM `users` where email='$email' and ban='0'";
     $result = $mysqli->query($sql);
 
     $user = ($result->fetch_object());

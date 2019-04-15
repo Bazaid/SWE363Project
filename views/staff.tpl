@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>DashBoard</title>
-
-  <!-- General CSS Files -->
-  <link rel="stylesheet" href="../assets/modules/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/modules/fontawesome/css/all.min.css">
-
-  <!-- CSS Libraries -->
-
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/components.css">
-<body>
-  <div id="app">
+{include file='./include/header_dashboard.tpl'}
+<div id="app">
     <div class="main-wrapper main-wrapper-1">
       <div class="navbar-bg"></div>
       <nav class="navbar navbar-expand-lg main-navbar">
@@ -27,7 +11,6 @@
         </form>
         <ul class="navbar-nav navbar-right">       
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
             <div class="d-sm-none d-lg-inline-block">Admin</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-divider"></div>
@@ -38,6 +21,7 @@
           </li>
         </ul>
       </nav>
+      
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
@@ -49,18 +33,18 @@
           <ul class="sidebar-menu">
             <li class="menu-header ">Dashboard</li>
             <li class="active">
-              <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+              <a href="dashboard.php" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
 
             <li class="menu-header">Services/Requests</li>
-            <li><a class="nav-link" href="manage_services.html"><i class="fas fa-tasks"></i> <span>Manage Services</span></a></li>
-            <li><a class="nav-link" href="manage_requests.html"><i class="fas fa-cogs"></i> <span>Manage Requests</span></a></li>
+            <li><a class="nav-link" href="manage_services.php"><i class="fas fa-tasks"></i> <span>Manage Services</span></a></li>
+            <li><a class="nav-link" href="manage_requests.php"><i class="fas fa-cogs"></i> <span>Manage Requests</span></a></li>
 
             <li class="menu-header">Staff</li>
-            <li><a class="nav-link" href="manage_staff.html"><i class="fas fa-user-tie"></i> <span>Manage Staff</span></a></li>
+            <li><a class="nav-link" href="manage_staff.php"><i class="fas fa-user-tie"></i> <span>Manage Staff</span></a></li>
          
             <li class="menu-header">Users</li>
-            <li><a class="nav-link" href="manage_users.html"><i class="fas fa-user-tie"></i> <span>Manage Users</span></a></li>
+            <li><a class="nav-link" href="manage_users.php"><i class="fas fa-user-tie"></i> <span>Manage Users</span></a></li>
          
          
           </ul>
@@ -89,17 +73,4 @@
       </footer>
     </div>
   </div>
-
-  <!-- General JS Scripts -->
-  <script src="/assets/modules/jquery.min.js"></script>
-  <script src="/assets/modules/popper.js"></script>
-  <script src="/assets/modules/tooltip.js"></script>
-  <script src="/assets/modules/bootstrap/js/bootstrap.min.js"></script>
-  <script src="/assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
-  <script src="/assets/modules/moment.min.js"></script>
-  <script src="/assets/js/stisla.js"></script>
-
-  <script src="/assets/js/scripts.js"></script>
-  <script src="/assets/js/custom.js"></script>
-</body>
-</html>
+{include file='./include/footer_dashboard.tpl'}
