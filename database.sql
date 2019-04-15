@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.62)
 # Database: project
-# Generation Time: 2019-04-15 18:21:09 +0000
+# Generation Time: 2019-04-15 18:41:03 +0000
 # ************************************************************
 
 
@@ -60,7 +60,7 @@ LOCK TABLES `requests` WRITE;
 
 INSERT INTO `requests` (`id`, `service_id`, `user_id`, `staff_id`, `info`, `completed`, `created_at`, `completed_at`, `room`, `building`)
 VALUES
-	(1,1,1,-1,'',0,'0000-00-00',NULL,300,800);
+	(1,1,1,-1,'info',0,'0000-00-00',NULL,300,800);
 
 /*!40000 ALTER TABLE `requests` ENABLE KEYS */;
 UNLOCK TABLES;

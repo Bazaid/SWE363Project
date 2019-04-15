@@ -19,12 +19,11 @@ $user = Session::get("user");
 $sql = "SELECT * FROM `requests` where id='$request_id' and (`user_id` = $user->id OR `staff_id` = $user->id )";
 $result = $mysqli->query($sql);
 $request = ($result->fetch_object());
-
 if ($request) {
     if (!empty($request->id)) {
-        $sql = "DELETE FROM requests
-        WHERE id='$request->id';";
-        if(!$mysqli->query($sql)) {
+            $date = date('Y-m-d'); 
+            $query = "UPDATE `requests` SET `completed` = '1', `completed_at` ='$date'  WHERE `id` = '$request->id'";
+        if(!$mysqli->query($query)) {
             http_response_code(400);
             exit('error deletion');
         }
