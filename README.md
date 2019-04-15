@@ -9,3 +9,18 @@ KFUPM Maintenance web site
 2) import database.sql
 3) You are done !.
 
+
+# Testting acccount
+#student test account
+email: student@test.com
+pssword: student
+
+#admin test account
+email: admin@test.com
+pssword: admin
+
+#staff test account
+email: staff@test.com
+pssword: staff
+
+
