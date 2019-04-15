@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.62)
 # Database: project
-# Generation Time: 2019-04-15 18:41:03 +0000
+# Generation Time: 2019-04-15 20:47:25 +0000
 # ************************************************************
 
 
@@ -85,10 +85,10 @@ LOCK TABLES `services` WRITE;
 
 INSERT INTO `services` (`id`, `logo`, `name`, `description`, `creation_date`)
 VALUES
-	(1,'game.png','AC Problem','AC PROBLEM','0000-00-00'),
-	(2,'cabin.png','Room Unlock','Room Unlock','0000-00-00'),
-	(3,'cake.png','Maintenance','Maintenance','0000-00-00'),
-	(4,'game.png','Furniture','Furniture','0000-00-00');
+	(1,'AC.PNG','AC Problem','AC PROBLEM','0000-00-00'),
+	(2,'door unlock.PNG','Room Unlock','Room Unlock','0000-00-00'),
+	(3,'maintenance.PNG','Maintenance','Maintenance','0000-00-00'),
+	(4,'furniture.PNG','Furniture','Furniture','0000-00-00');
 
 /*!40000 ALTER TABLE `services` ENABLE KEYS */;
 UNLOCK TABLES;
